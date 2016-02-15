@@ -165,9 +165,9 @@ describe('PanZoom specs', function () {
             e.initMouseEvent(type, true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
             e.touches = touches || [];
             
-            e.preventDefault = undefined;
-            e.stopPropagation = undefined;
-            
+            //e.preventDefault = undefined;
+            //e.stopPropagation = undefined;
+
             return $.event.fix(e);
         }
 

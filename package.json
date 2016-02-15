@@ -25,7 +25,7 @@
         "node": ">=0.10.0"
     },
     "scripts": {
-        "postinstall": "bower install",
+        "postinstall": "./node_modules/.bin/bower install",
         "start": "npm run build:js:watch & npm run build:css:watch & browser-sync start --server --files \"demo/*,build/*\" --startPath \"demo/demo.dev.html\"",
         "prebuild": "npm run lint && npm run test",
         "build": "npm run build:js && npm run build:js:minified && npm run build:css",
